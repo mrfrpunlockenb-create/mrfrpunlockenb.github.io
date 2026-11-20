@@ -1,80 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr FRP Unlock ENB</title>
-<style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #101820;
-  color: white;
-  text-align: center;
-}
-header {
-  background: #080d13;
-  padding: 25px 12px;
-  border-bottom: 2px solid #00aaff;
-}
-h1 { color: #00bfff; }
-section { padding: 25px 15px; }
-.card {
-  background: #1d2935;
-  margin: 15px auto;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 450px;
-}
-h2 { color: #00bfff; }
-.button {
-  display: inline-block;
-  background: #008cff;
-  color: white;
-  padding: 13px 22px;
-  border-radius: 7px;
-  text-decoration: none;
-  font-weight: bold;
-}
-footer {
-  background: #080d13;
-  padding: 20px;
-  color: #aaa;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06132d">
+  <meta name="description" content="Mr FRP Unlock – East New Britain, Papua New Guinea. Phone services, remote support, tool rentals and software licenses. WhatsApp and Facebook contact details.">
+  <title>Mr FRP Unlock – East New Britain</title>
+  <style>
+    :root{--navy:#06132d;--blue:#087bff;--cyan:#00d9ff;--yellow:#ffdf00;--white:#f7fbff;--muted:#b8c8e2}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:#030914;color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+    header{background:linear-gradient(135deg,#020712,#082b68 58%,#031126);border-bottom:2px solid var(--blue)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+    .brand{font-weight:900;letter-spacing:.5px;color:#fff;font-size:1.12rem}.brand span{color:var(--cyan)}
+    .navlinks{display:flex;gap:16px;flex-wrap:wrap;font-size:.92rem;color:#e4efff}
+    .navlinks a:hover{color:var(--yellow)}
+    .hero{display:grid;grid-template-columns:1fr 1.15fr;gap:30px;align-items:center;padding:42px 0 52px}
+    .hero img{width:100%;max-width:480px;display:block;margin:auto;border-radius:18px;box-shadow:0 0 28px #007bff66}
+    .eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px}
+    h1{font-size:clamp(2.25rem,5vw,4.2rem);line-height:1.02;margin:10px 0 18px}
+    h1 span{color:var(--yellow)} .lead{font-size:1.12rem;color:#d8e5fa;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:900;background:var(--yellow);color:#07101f}
+    .btn.secondary{background:#087bff;color:white;border:1px solid #6fcaff}
+    section{padding:48px 0}.section-head{text-align:center;margin-bottom:26px}
+    h2{font-size:clamp(1.65rem,3vw,2.4rem);margin:0 0 8px}
+    .section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(160deg,#0c2042,#071326);border:1px solid #1269c8;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #0006}
+    .card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#08152a}
+    .card-body{padding:17px}.card h3{margin:0 0 7px;color:#fff;font-size:1.12rem}
+    .card p{margin:0;color:#c5d5ec;font-size:.95rem}
+    .tag{display:inline-block;color:#07101f;background:var(--yellow);font-size:.78rem;font-weight:900;padding:4px 9px;border-radius:20px;margin-bottom:9px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .service{padding:17px;background:#0a1b36;border:1px solid #164c8a;border-radius:12px}
+    .service strong{color:var(--yellow);display:block;margin-bottom:4px}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .price{background:#0a1b36;border:1px solid #1a79df;border-radius:14px;text-align:center;padding:20px}
+    .price h3{margin:0;color:var(--cyan)}.price .amount{font-size:2rem;font-weight:900;color:var(--yellow);margin:8px 0}
+    .notice{background:#1d1b0b;border:1px solid #b99c00;padding:15px;border-radius:12px;color:#fff2b5;margin-top:18px}
+    .contact{background:linear-gradient(135deg,#07152e,#063d82);border-top:2px solid var(--blue);border-bottom:2px solid var(--blue)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .contact-box{background:#06152d;border:1px solid #1688ff;border-radius:14px;padding:20px}
+    .contact-box h3{margin-top:0;color:var(--yellow)}
+    footer{padding:22px 0;text-align:center;color:#9fb2d0;font-size:.9rem}
+    .gallery-note{text-align:center;color:#a9bedc;margin-top:18px;font-size:.9rem}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.hero .actions{justify-content:center}.grid{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.navlinks{gap:10px}}
+    @media(max-width:540px){.grid,.services,.contact-grid{grid-template-columns:1fr}.navlinks{font-size:.82rem}.hero{padding:28px 0 36px}section{padding:36px 0}}
+  </style>
 </head>
 <body>
-
 <header>
-<h1>MR FRP UNLOCK [ENB]</h1>
-<p>Phone Unlocking & Technical Services</p>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">MR <span>FRP UNLOCK</span> – ENB</a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#rentals">Tool Rentals</a>
+        <a href="#licenses">Licenses</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="hero" id="home">
+      <div><img src="images/mr-frp-unlock-logo.png" alt="Mr FRP Unlock East New Britain official logo"></div>
+      <div>
+        <div class="eyebrow">East New Britain · Papua New Guinea</div>
+        <h1>Your Phone,<br><span>Our Expertise.</span></h1>
+        <p class="lead">Phone servicing, unlocking assistance, remote support, professional Android tools and tool-rental services. Unlock more. Fix more. Do more.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/67581529321">WhatsApp: 81529321</a>
+          <a class="btn secondary" href="https://wa.me/67573018665">Tool Rentals: 73018665</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
-<section>
-<h2>Welcome to Mr FRP Unlock</h2>
-<p>Your local phone unlocking and mobile technical service in East New Britain.</p>
+<main>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><h2>Our Phone Services</h2><p>Professional assistance for supported devices and authorized account owners.</p></div>
+      <div class="services">
+        <div class="service"><strong>FRP / Google Account Assistance</strong>Factory Reset Protection support for eligible devices, with ownership verification.</div>
+        <div class="service"><strong>Account & Device Lock Support</strong>Assistance with supported account and device-lock issues.</div>
+        <div class="service"><strong>Factory Reset & Software Repair</strong>Software troubleshooting, reset and recovery services where supported.</div>
+        <div class="service"><strong>Firmware Flashing</strong>Read/write and firmware servicing for compatible models.</div>
+        <div class="service"><strong>Bootloader & IMEI Services</strong>Supported servicing options, subject to device model and applicable laws.</div>
+        <div class="service"><strong>Remote Unlocking Assistance</strong>Remote service options for eligible devices. A PC, stable internet, required drivers and remote-support app may be needed.</div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h2>Our Services</h2>
-<p>FRP Reset Services</p>
-<p>Phone Unlocking</p>
-<p>Mobile Software Support</p>
-<p>Unlocking Tools Available for Rent</p>
-</div>
+  <section id="rentals" style="background:#050f20">
+    <div class="wrap">
+      <div class="section-head"><h2>Professional Tool Rentals</h2><p>Choose a rental period and contact us to confirm current access and device compatibility.</p></div>
+      <div class="grid">
+        <article class="card"><img src="images/unlocktool-rental.jpg" alt="UnlockTool rental service advertisement"><div class="card-body"><span class="tag">UNLOCKTOOL</span><h3>UnlockTool Rental</h3><p>Rental access advertised for 6, 12 or 24 hours. Contact us before booking to confirm availability and supported functions.</p></div></article>
+        <article class="card"><img src="images/tsm-tool-rental.jpg" alt="TSM Tool rental service advertisement"><div class="card-body"><span class="tag">TSM TOOL</span><h3>TSM Tool Rental</h3><p>Android servicing tool rental for compatible repair workflows. Ask about current access and supported models.</p></div></article>
+        <article class="card"><img src="images/available-tools.jpg" alt="List of available phone servicing tools"><div class="card-body"><span class="tag">TOOL ACCESS</span><h3>Available Tools</h3><p>UnlockTool, TFM, Hydra, MDMFIX, AMT, 360 Tool, CF Tool, TSM, TFT Pro, DFT Pro, AWT, EFT Pro and more, subject to availability.</p></div></article>
+      </div>
+      <div class="pricing" style="margin-top:20px">
+        <div class="price"><h3>HOURLY RENTAL</h3><div class="amount">K25</div><p>Per hour (PGK)</p></div>
+        <div class="price"><h3>3-MONTH LICENSE</h3><div class="amount">K150</div><p>Software license (PGK)</p></div>
+        <div class="price"><h3>WEEKLY RENTAL OPTIONS</h3><div class="amount">K150 · K200 · K300</div><p>Ask which tool/package each price covers</p></div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h2>Contact Us</h2>
-<p>Need assistance with your phone?</p>
-<a class="button" href="https://wa.me/">Contact on WhatsApp</a>
-</div>
-</section>
+  <section id="licenses">
+    <div class="wrap">
+      <div class="section-head"><h2>Software Licenses & Special Services</h2><p>Contact us to check license availability, activation terms and compatibility before payment.</p></div>
+      <div class="grid">
+        <article class="card"><img src="images/amt-tool-license.jpg" alt="AMT Android Multi Tool license advertisement"><div class="card-body"><span class="tag">AMT TOOL</span><h3>AMT – Android Multi Tool</h3><p>Advertised 1-year license: K200. Confirm activation and supported features before purchase.</p></div></article>
+        <article class="card"><img src="images/unlocktool-license.jpg" alt="UnlockTool license activation and renewal advertisement"><div class="card-body"><span class="tag">UNLOCKTOOL LICENSE</span><h3>Activation / Renewal</h3><p>3 months: K150 · 6 months: K180 · 1 year: K300, as shown in the supplied advertisement. Confirm current pricing.</p></div></article>
+        <article class="card"><img src="images/honor-frp-service.jpg" alt="Honor FRP service advertisement"><div class="card-body"><span class="tag">HONOR SERVICE</span><h3>Honor Device Assistance</h3><p>Advertised service price: K260. Confirm eligibility, exact model and serial details with us first. The supplied ad excludes Huawei and Huawei ID / Honor ID-locked devices.</p></div></article>
+        <article class="card"><img src="images/frp-unlock-pricing.jpg" alt="FRP service price advertisement"><div class="card-body"><span class="tag">FRP SERVICE</span><h3>Android FRP Service Pricing</h3><p>Android 11 and below: K50 · Android 12 and above: K100, as shown in the supplied advertisement. Compatibility must be checked.</p></div></article>
+        <article class="card"><img src="images/phone-lock-services.jpg" alt="Phone lock assistance promotional design"><div class="card-body"><span class="tag">DEVICE SUPPORT</span><h3>Having Phone Lock Problems?</h3><p>Contact us with the brand, exact model and lock screen details so we can assess available support.</p></div></article>
+        <article class="card"><img src="images/remote-unlocking.jpg" alt="Remote unlocking service promotional design"><div class="card-body"><span class="tag">REMOTE SERVICE</span><h3>Remote Unlocking</h3><p>Remote assistance may be available for supported devices. A PC, steady internet, drivers and AnyDesk or UltraViewer may be required.</p></div></article>
+      </div>
+      <div class="notice"><strong>Important:</strong> Service availability and results depend on the exact device model, software version, region and proof of ownership. We only assist with devices and accounts you own or are authorized to service. Prices and tool availability should be confirmed before booking.</div>
+    </div>
+  </section>
 
-<footer>
-<p>Mr FRP Unlock [ENB]</p>
-<p>East New Britain, Papua New Guinea</p>
-</footer>
+  <section id="gallery" style="background:#050f20">
+    <div class="wrap">
+      <div class="section-head"><h2>Promotional Gallery</h2><p>Browse our service, rental and software advertisements.</p></div>
+      <div class="grid">
+        <article class="card"><img src="images/mr-frp-unlock-logo.png" alt="Mr FRP Unlock logo"><div class="card-body"><h3>Official Business Logo</h3></div></article>
+        <article class="card"><img src="images/unlocktool-rental.jpg" alt="UnlockTool rental poster"><div class="card-body"><h3>UnlockTool Rental</h3></div></article>
+        <article class="card"><img src="images/tsm-tool-rental.jpg" alt="TSM Tool rental poster"><div class="card-body"><h3>TSM Tool Rental</h3></div></article>
+        <article class="card"><img src="images/phone-lock-services.jpg" alt="Phone lock services poster"><div class="card-body"><h3>Phone Lock Services</h3></div></article>
+        <article class="card"><img src="images/available-tools.jpg" alt="Available tools poster"><div class="card-body"><h3>Available Tools</h3></div></article>
+        <article class="card"><img src="images/remote-unlocking.jpg" alt="Remote unlocking poster"><div class="card-body"><h3>Remote Unlocking</h3></div></article>
+        <article class="card"><img src="images/honor-frp-service.jpg" alt="Honor service poster"><div class="card-body"><h3>Honor Service</h3></div></article>
+        <article class="card"><img src="images/amt-tool-license.jpg" alt="AMT tool poster"><div class="card-body"><h3>AMT Tool License</h3></div></article>
+        <article class="card"><img src="images/unlocktool-license.jpg" alt="UnlockTool license poster"><div class="card-body"><h3>UnlockTool License</h3></div></article>
+        <article class="card"><img src="images/frp-unlock-pricing.jpg" alt="FRP pricing poster"><div class="card-body"><h3>FRP Service Pricing</h3></div></article>
+      </div>
+      <p class="gallery-note">All ten supplied promotional images are included in this website package. Prices shown on individual promotional posters may be product-specific; please confirm the exact tool, license or service before payment.</p>
+    </div>
+  </section>
 
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><h2>Contact Mr FRP Unlock – ENB</h2><p>East New Britain, Papua New Guinea</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3>Phone Services & Remote Support</h3><p>WhatsApp: <strong>+675 8152 9321</strong></p><a class="btn" href="https://wa.me/67581529321">Message on WhatsApp</a></div>
+        <div class="contact-box"><h3>Tool Rentals</h3><p>WhatsApp: <strong>+675 7301 8665</strong></p><a class="btn" href="https://wa.me/67573018665">Book Tool Rental</a></div>
+        <div class="contact-box"><h3>Facebook</h3><p>Follow our business page for updates and promotions.</p><a class="btn secondary" href="https://www.facebook.com/share/1WNGeRFoCL/" target="_blank" rel="noopener">Visit Official Facebook Page</a></div>
+        <div class="contact-box"><h3>Before You Contact Us</h3><p>Send the phone brand, exact model number, Android version (if known), your issue and proof that you own or are authorized to service the device.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Mr FRP Unlock – East New Britain. Unlock More · Fix More · Do More.</div></footer>
 </body>
 </html>
